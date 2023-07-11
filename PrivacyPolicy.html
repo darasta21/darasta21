@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+</head>
+<body  style="background-color: white;">
+    <header class="container">
+        <div class="row">
+         <div class="col-md-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="" style="width:200px;" class="rounded-pill"> 
+                </a>
+            </div>
+         </div>
+         <div class="col-md-9">
+            <p style="margin-top: 2rem;">EXCELLENT PREPARATORY CLASS <br> <b>THE TIME IS NOW </b> </p>
+         </div>
+        </div>
+        
+    </header>
+  <main class="container my-4">
+    <h1>Privacy Policy</h1>
+    <p>This is the privacy policy for Excellence Preparatory Classes. In this policy, we explain how we collect, use, and protect your personal information when you use our website.</p>
+    <h2>Information We Collect</h2>
+    <p>We may collect personal information that you provide to us, such as your <br> 1) name <br>2)email address and  <br> 3)phone number. <br>We may also collect non-personal information, such as your IP address and browser type.</p>
+    <h2>How We Use Your Information</h2>
+    <p>We may use your personal information to communicate with you, to provide you with our services, and to improve our website/app. We may also use non-personal information for analytical purposes.</p>
+    <h2>How We Protect Your Information</h2>
+    <p>We take reasonable measures to protect your personal information from unauthorized access, disclosure, or misuse. However, no security system is completely foolproof, and we cannot guarantee the security of your information.</p>
+    <h2>Third-Party Services</h2>
+    <p>We may use third-party services, such as Google Analytics, that collect, monitor, and analyze website/app usage data. These services may have their own privacy policies, which we encourage you to review.</p>
+    <h2>Cookies</h2>
+    <p>We may use cookies to personalize your experience on our website/app and analyze usage data. You can disable cookies in your browser settings, but this may affect your ability to use our website/app.</p>
+    <h2>Changes to This Policy</h2>
+    <p>We reserve the right to update this privacy policy at any time. We will notify you of any changes by posting the new policy on our website/app. Your continued use of our website/app after any changes indicates your acceptance of the new policy.</p>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns about this privacy policy, please contact us at <a href="https://excellence-prep.com/signup_student.php#directories">Contact</a>.</p>
+  </main>
+
+  <form>
+    <div class="form-group">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="acceptCheckbox" required>
+        <label class="form-check-label" for="acceptCheckbox">
+          ACCEPT
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="declineCheckbox">
+        <label class="form-check-label" for="declineCheckbox">
+          DECLINE
+        </label>
+      </div>
+    </div>
+    <div id="acceptMessage" class="form-group" style="display: none;">
+      <button type="submit" class="btn btn-dark" id="submitButton" style="width: 100%;">CONTINUE</button>
+    </div>
+    <div id="declineMessage" class="form-group" style="display: none;">
+      <p>We're sorry to hear you're not interested. If you change your mind, please review our privacy policy and accept the terms and conditions to proceed.</p>
+    </div>
+  </form>
+
+  <footer class="bg-white text-dark text-center py-3">
+    <p>&copy;Excellencep Preparatory Classes Copyright 2022 developed by TECHRITOMA Inc</p>
+  </footer>
+  <!-- jQuery -->
+  <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Get elements
+    const acceptCheckbox = document.getElementById('acceptCheckbox');
+    const declineCheckbox = document.getElementById('declineCheckbox');
+    const acceptMessage = document.getElementById('acceptMessage');
+    const submitButton = document.getElementById('submitButton');
+    const declineMessage = document.getElementById('declineMessage')
+
+    // Add event listeners
+    acceptCheckbox.addEventListener('change', function() {
+      if (this.checked) {
+        acceptMessage.style.display = 'block';
+        submitButton.classList.add('btn-warning');
+        submitButton.disabled = false;
+      } else {
+        acceptMessage.style.display = 'none';
+        submitButton.classList.remove('btn-warning');
+        submitButton.disabled = true;
+      }
+    });
+
+    declineCheckbox.addEventListener('change', function() {
+      if (this.checked) {
+        acceptMessage.style.display = 'none';
+        submitButton.classList.remove('btn-warning');
+        submitButton.disabled = true;
+        declineMessage = true;
+      } else {
+        acceptMessage.style.display = 'none';
+        submitButton.classList.remove('btn-warning');
+        submitButton.disabled = true;
+        
+      }
+    });
+  </script>
+
+</body>
+</html>

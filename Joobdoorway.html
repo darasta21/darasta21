@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Doorway</title>
+    <!--<link rel="stylesheet" href="joobdoorway.css">-->
+    <link rel="stylesheet" href="css\all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .bg-img{
+            background: linear-gradient(rgba(73, 70, 70, 0.411));
+            top: 0;
+            left: 0;
+            background-image: url('tips-and-strategies.jpg');
+            background-position: top;
+            background: linear-gradient(backgro);
+            background-color: #f2f4f5e0;
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+        }
+
+        .bg-img::before{
+            content: "";
+            background-color: rgba(26, 24, 24, 0.137); /* change the opacity value as desired */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+        }
+
+        #con{
+            display: flex;
+        }
+        #country{
+            margin-left: 0;
+        }
+
+        #country, button{
+          display: inline-flex;
+          
+        }
+
+    </style>
+</head>
+<body">    
+    <section class="bg-img">
+        <header  class="navbar navbar-expand-sm bg-transparent navbar-dark">
+            
+            <div class="container-fluid">
+    
+                <div class="col-md-3">
+                  <img src="logo (1).png" alt="Logo" style="width: 200px;">
+                </div>   
+
+              <div class="container-fluid col-md-6"> 
+                   <ul class="nav">
+                     <li class="nav-item"><a class="nav-link" href="Joobdoorway.html" style="color: white;">home</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#" style="color: white;">job list</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#" style="color: white;">verified employees</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#" style="color: white;">contact us</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#" style="color: white;">faqs</a></li>
+                     <button id="privacy-policy-button" class="btn btn-primary">Privacy Policy</button>
+
+<!-- Privacy Policy modal -->
+<div class="modal fade" id="privacy-policy-modal" tabindex="-1" aria-labelledby="privacy-policy-modal-label" aria-hidden="false">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privacy-policy-modal-label"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="privacy-policy-iframe" src="Privacy_Policy.html"  scrolling="yes" style="width:100%; height:100vh;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+                    </ul>
+                    
+               </div> 
+                    
+                <div class="container col-md-3">
+                    <button style="cursor: pointer; background-color: transparent; color: white; border-color: white;">login</button>
+                    <button style="cursor: pointer; background-color: transparent; color: white; border-color: white;">register</button>
+                </div>
+             </div>
+           
+        </header>
+    
+        <section class="conatiner-fluid p-5">
+            <h1 class="text-white text-center text-center" style="font-weight: 500; font-size:50px">MEETING YOUR LIFE CHANGING <br clas="text-center">OPORTUNITY<br> </h1>
+            <p class="p-4 text-white text-center text-center" style="font-weight: 400; font-size:30px ;">FInding your next job or career on job doorway</p>
+        </section>
+
+        <div class="container " id="con">
+           
+              <div class="col-md-6 mx-auto">         
+                  <select class="form-control category-select" style="background-color: transparent;">
+                    <option selected disabled>Select Category</option>
+                    <option>Category 1</option>
+                    <option>Category 2</option>
+                    <option>Category 3</option>
+                  </select>
+                </div>
+
+                  <div class="country-select col-md-6 mx-auto" id="country">
+                    
+                    <select class="form-control category-select " id="" style="background-color: transparent;">
+                        <option selected disabled>Select Country</option>
+                        <option value="">Country 1</option>
+                        <option value="">Country 2</option>
+                        <option value="">Country 3</option>
+                    </select>
+                    <button class="search-btn" style="background-color: transparent; color: white; border-color: white;"><i class="fas fa-search"></i></button>   
+                </div>          
+          </div>
+    </section> 
+
+    <div class="container-fluid" style="background-color: whitesmoke;">
+        <h2 class="text-center">Follow this simple Three Steps</h2>
+        <div class="row" style="padding: 40px 0;">
+        <div class="col-md-4" style="display: flex;">
+            <i class="fa-sharp fa-light fa-pencil fa-2x"></i>
+            &nbsp;&nbsp;<div style="color: lightblue; border-bottom: 1px solid lightblue; font-size: 20px;">Step one/ Register</div> 
+        </div>
+        <div class="col-md-4" style="display: flex;">
+            <i class="fa-sharp fa-light fa-pencil fa-2x"></i>
+            &nbsp;&nbsp;<div style="color: lightblue; border-bottom: 1px solid lightblue; font-size: 20px;">Step two/ Login and Complete your profile</div> 
+        </div>
+        <div class="col-md-4" style="display: flex;" >
+            <i class="fa-sharp fa-solid fa-magnifying-glass fa-2x"></i>
+            &nbsp;&nbsp;<div style="color: lightblue; border-bottom: 1px solid lightblue; font-size: 20px;">Step three/ Search for a job and Apply</div> 
+        </div>
+    </div>
+   </div>
+
+ <div style="padding: 10px 0;">
+    <h2 class="text-center">random companies</h2>
+</div>   
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3" style="height: 40vh; margin: 0 30px; padding:50px 0;  background-color:  rgb(225, 233, 233); text-align: center;">
+            <div style="background-image: url('Buy.jpg'); background-repeat: no-repeat; background-size: cover; background-position: up; height: 20vh; width: 13vw; margin: auto;"></div>
+            <p class="text-center">Ajua Market</p>
+            <a href="#"><button style="cursor: pointer; justify-content: center; width: 160px; border-color:white; background-color:transparent; color: gray;">View company</button></a>
+            </div>
+
+            <div class="col-md-3"  style="height: 40vh; margin: 0 30px; padding:50px 0; background-color:  rgb(225, 233, 233); text-align: center;">
+            <div style="background-image: url('logo.png');  background-repeat: no-repeat; background-size: cover;background-position: up; height: 20vh;  width: 13vw; margin: auto;"></div>
+            <p class="text-center">Excellence Preparatory Classes</p>
+            <button style="cursor: pointer; justify-content: center; width: 160px; border-color:white; background-color: transparent; color: gray;">View company</button>
+            </div>
+
+            <div class="col-md-3"  style="height: 40vh; margin: 0 30px; padding:50px 0;  background-color:  rgb(225, 233, 233); text-align: center;">
+            <div style="background-image: url('Techritoma.jpg'); background-repeat: no-repeat; background-size: cover; background-position: up; height: 20vh;  width: 13vw; margin: auto;"></div>
+            <p class="text-center">TECHRITOMA Inc</p>
+            <button style="cursor: pointer; justify-content: center; width: 160px; border-color:white; background-color: transparent; color: gray;">View company</button>
+            </div>
+        </div>
+   </div>
+
+   <footer style="background-color: rgba(31, 30, 30, 0.753); color:white; margin-top: 50px; padding-top: 60px;">
+    <div class="container">
+     <div class="row">
+
+        <div class="col-md-4">
+            <h3>About Joob Doorway</h3>
+            
+                <p style="color: grey;">Job Doorway is the best place to closed the struggle</p>
+            
+       </div>
+
+       <div class="col-md-4 container">
+        <h3>Quick Links</h3>
+        <div class="row">  
+                <ul class="col-md-6" style="list-style: none;">
+                    <li><a href="#" style="text-decoration: none; color: grey;">Home</a></li>
+                    <li><a href="#" style="text-decoration: none; color: gray;">Employers</a></li>
+                    <li><a href="#" style="text-decoration: none; color: grey;">Go to top</a></li>
+                </ul>
+
+                <ul class="col-md-6" style="list-style: none;">
+                    <li><a href="#" style="color: grey;">Job List</a></li>
+                    <li><a href="#" style="color: grey;">Contact Us</a></li>
+                </ul>
+                </div>
+                </div>
+    
+
+        <div class="col-md-4">
+            <h3>Job Doorway Contact</h3>
+            <ul class="col-md-6" style="list-style: none; color: grey;">
+                <li>Address : Molyko -Buea</li>
+                <li><a href="#" style="text-decoration: none; color: grey;">Email:jobdoorway@gmail.com</a></li>
+                <li>Phone : +237679495102</li>
+            </ul>
+
+        </div>
+     </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: rgb(31, 30, 30)">
+    <div class="container">
+        <div class="row">
+        <p class="col-md-5" style="color: gray;">&copyCopyright 2023 TECHCOSOLVED 6</p>
+        <p class="col-md-6" style="color: gray;">Developed by TECHRITOMA Inc</p>
+        <p class="col-md-1" style="color: gray;"><i class="fa-brands fa-twitter" style="margin: 0 3px;"></i> <i class="fa-brands fa-facebook" style="margin: 0 3px;"></i> <i class="fa-brands fa-instagram" style="margin: 0 3px;"></i></p>
+      </div>
+    </div>
+</div>
+   
+   </footer>
+    
+    
+    <script>
+        const privacyPolicyButton = document.getElementById ("privacy-policy-button");
+        const privacyPolicyModal = new bootstrap.Modal(document.getElementById("privacy-policy-modal"));
+        const privacyPolicyIframe = document.getElementById("privacy-policy-iframe");
+        
+        privacyPolicyButton.addEventListener("click", () => {
+          privacyPolicyIframe.src = "Privacy_Policy.html";
+          privacyPolicyModal.show();
+        });
+        </script>
+
+      <script src="js\all.min.js"></script>
+</body>
+</html>
